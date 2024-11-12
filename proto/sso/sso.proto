@@ -12,7 +12,7 @@ service Auth {
 }
 
 message isAuthRequest {
-  int64 id = 1;
+  int64 user_id = 1;
 }
 
 message isAuthResponse {
