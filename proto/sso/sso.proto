@@ -8,6 +8,15 @@ service Auth {
   rpc Register(RegisterRequest) returns (RegisterResponse);
   rpc Login (LoginRequest) returns (LoginResponse);
   rpc isAdmin (isAdminRequest) returns (isAdminResponse);
+  rpc isAuthed (isAuthedRequest) returns (isAuthResponse);
+}
+
+message isAuthedRequest {
+  int64 id = 1;
+}
+
+message isAuthResponse {
+  bool is_authed = 1;
 }
 
 message RegisterRequest {
