@@ -16,7 +16,7 @@ message isAuthRequest {
 }
 
 message isAuthResponse {
-  bool is_authed = 1;
+  bool is_auth = 1;
 }
 
 message RegisterRequest {
